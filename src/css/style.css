@@ -1,0 +1,108 @@
+body {
+  background-image: url(../images/fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.container .informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  max-width: 30rem;
+  color: #ffffff;
+}
+
+.informacoes h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.informacoes h2 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.container .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 378px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.formulario input {
+  width: 298px;
+  height: 35px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+
+.formulario .area-texto{
+  border: 1px solid #000000;
+  border-radius: 5px;
+  resize: none;
+}
+
+.formulario .mensagem{
+  opacity: 0;
+  font-size: 8px;
+  font-weight: 400px;
+  margin-bottom: 5px;
+}
+
+
+
+.formulario p{
+  font-size: 15px;
+  font-weight: 400;
+  padding-right: 160px;
+  margin-bottom: 20px;
+}
+
+.formulario .btn {
+  width: 298px;
+  height: 41px;
+  background-color: #3CCC87;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.formulario .btn:hover{
+  cursor: pointer;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*  O que deve acontecer quando for ou nao preenchido os campos  */
+.formulario .mensagem-erro{
+  opacity: 1;
+}
+
+.formulario .alerta {
+  color: #F52E2E;
+  font-size: 8px;
+  font-weight: 400px;
+  margin-bottom: 5px;
+}
+
+.formulario .input-incorreto{
+  border: 1px solid #F52E2E;
+}
+
+.formulario .input-correto{
+  border: 1px solid #00C22B;
+}
